@@ -8,16 +8,13 @@ public class GuessTheNumber {
      */
 
     public static void main (String[] args){
-        game(1, 10);
-        System.out.println("want to play again?\npress (X) to continue\npress (Y) to continue");
-        Scanner console = new Scanner(System.in);
-        String choice = console.next().toLowerCase();
-        if (choice.equals("x")){
-            game(1, 15);
-        } else if (choice.equals("y")){
-            System.out.println("thanks for playing!");
-        }
-        //game(1, 25);
+        game(1,10);
+        System.out.println();
+        System.out.println("Level 2:");
+        game(10, 100);
+        System.out.println();
+        System.out.println("Level 3:");
+        game(50, 500);
     }
 
      public static void game (int min, int max){
